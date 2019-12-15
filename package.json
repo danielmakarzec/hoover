@@ -1,0 +1,22 @@
+{
+  "name": "hoover",
+  "version": "1.0.0",
+  "description": "a program that navigates an imaginary robotic hoover (much like a Roomba)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmakarzec/hoover.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "daniel makarzec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmakarzec/hoover/issues"
+  },
+  "homepage": "https://github.com/danielmakarzec/hoover#readme"
+}
