@@ -6,3 +6,6 @@ const data = fs.readFileSync('input.txt', 'utf8');
 
 // access each line individually + remove empty values
 let lines = Array.from(data.split('\n').filter(n => n));
+
+// hover instructions (always the last line)
+const hooverMoves = Array.from(lines.pop());
