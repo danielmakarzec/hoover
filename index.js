@@ -41,3 +41,17 @@ const dirtCheck = positions => {
     };
   });
 };
+
+// calculating the final position of the hoover
+const hooverFunction = (moves) => {
+  moves.forEach(move => {
+    if (move === 'N') { if (hooverPositionY < roomSizeY-1) {hooverPositionY ++} };
+    if (move === 'S') { if (hooverPositionY > 0) {hooverPositionY --} };
+    if (move === 'E') { if (hooverPositionX < roomSizeX-1) {hooverPositionX ++} };
+    if (move === 'W') { if (hooverPositionX > 0) {hooverPositionX --} };
+
+    dirtCheck(dirtPositions);
+  });
+};
+
+module.exports = roomSizeXY, hooverPositionXY, hooverPositionX, hooverFunction;
