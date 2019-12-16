@@ -54,4 +54,10 @@ const hooverFunction = (moves) => {
   });
 };
 
+hooverFunction(hooverMoves);
+
+// results
+console.log(`final hoover position(X Y): ${hooverPositionX} ${hooverPositionY}`);
+console.log(`patches of dirt the robot cleaned up: ${cleanScore}`);
+
 module.exports = roomSizeXY, hooverPositionXY, hooverPositionX, hooverFunction;
