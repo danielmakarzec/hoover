@@ -27,3 +27,17 @@ let hooverPositionY = hooverPositionXY[1];
 
 // an array of all the positions of all dirty patches
 const dirtPositions = coordinates;
+
+// counter for patches hoover cleaned up
+let cleanScore = 0;
+
+// function checks if the current patch is clean or not and changes the status if so.
+const dirtCheck = positions => {
+  positions.forEach(position => {
+    if (position[0] === hooverPositionX && position[1] == hooverPositionY) {
+      cleanScore++;
+      position[0] = 'cleaned';
+      position[1] = 'cleaned';
+    };
+  });
+};
